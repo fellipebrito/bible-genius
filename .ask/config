@@ -1,0 +1,19 @@
+{
+  "deploy_settings": {
+    "default": {
+      "skill_id": "amzn1.ask.skill.8299f89d-24a2-454d-b92c-ce9c816e509a",
+      "was_cloned": false,
+      "merge": {
+        "skillManifest": {
+          "apis": {
+            "custom": {
+              "endpoint": {
+                "uri": "bible_facts"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
