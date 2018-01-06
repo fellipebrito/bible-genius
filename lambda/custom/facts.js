@@ -4,6 +4,12 @@ global.HELP_MESSAGE = "You can say tell me a bible fact, or, you can say exit...
 global.HELP_REPROMPT = "What can I help you with?";
 global.STOP_MESSAGE = "Goodbye!";
 
+global.BOOK_REPEAT_MESSAGE = 'Try saying repeat.';
+global.BOOK_NOT_FOUND_MESSAGE = "I\'m sorry, I could not find the answer for  ";
+global.BOOK_NOT_FOUND_WITH_ITEM_NAME = 'the book for %s. ';
+global.BOOK_NOT_FOUND_WITHOUT_ITEM_NAME = 'that book. ';
+global.BOOK_NOT_FOUND_REPROMPT = 'What else can I help with?';
+
 global.data = [
   'Over 100 million copies of the Bible are sold each year',
   'In 1631, a publishing company published a Bible with the typo “Thou Shalt Commit Adultery.” Only 9 of these Bibles, known as the “Sinners’ Bible” exist today.',

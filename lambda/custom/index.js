@@ -39,21 +39,14 @@ const handlers = {
 
     if (book) {
       this.attributes.speechOutput = book;
-      this.attributes.repromptSpeech = this.t('BOOK_REPEAT_MESSAGE');
 
-      this.response.speak(book).listen(this.attributes.repromptSpeech);
-      this.response.cardRenderer(cardTitle, book);
+      this.response.speak(book);
       this.emit(':responseReady');
     } else {
-      let speechOutput = this.t('BOOK_NOT_FOUND_MESSAGE');
-      const repromptSpeech = this.t('BOOK_NOT_FOUND_REPROMPT');
-      if (itemName) {
-        speechOutput += this.t('BOOK_NOT_FOUND_WITH_ITEM_NAME', itemName);
-      } else {
-        speechOutput += this.t('BOOK_NOT_FOUND_WITHOUT_ITEM_NAME');
-      }
+      let speechOutput = BOOK_NOT_FOUND_MESSAGE;
+      const repromptSpeech = BOOK_NOT_FOUND_REPROMPT;
+      speechOutput += BOOK_NOT_FOUND_WITHOUT_ITEM_NAME;
       speechOutput += repromptSpeech;
-
 
       this.attributes.speechOutput = speechOutput;
       this.attributes.repromptSpeech = repromptSpeech;
