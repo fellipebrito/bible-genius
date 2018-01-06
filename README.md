@@ -1,5 +1,5 @@
 ## Testing it locally
-I'm using https://www.npmjs.com/package/alexa-skill-test
+Follow the instructions to install it: https://www.npmjs.com/package/alexa-skill-test
 
 Just run `alexa-skill-test` inside of the `lambda/custom` folder
 
