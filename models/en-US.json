@@ -34,6 +34,38 @@
             "give me something"
           ],
           "slots": []
+        },
+        {
+          "name": "GetAnswerIntent",
+          "slots": [
+            {
+              "name": "book",
+              "type": "BOOKS_OF_THE_BIBLE"
+            }
+          ],
+          "samples": [
+            "how long is the book of {book}",
+            "how long is {book}",
+            "how many words has the book of {book}",
+            "how many words has {book}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Jeremiah"
+              }
+            },
+            {
+              "name": {
+                "value": "Genesis"
+              }
+            }
+          ],
+          "name": "BOOKS_OF_THE_BIBLE"
         }
       ]
     }
